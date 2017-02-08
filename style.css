@@ -9,7 +9,7 @@ body {
 	margin-left: auto; 
 	margin-right: auto;
 }
-header, nav, section, aside, p, footer {
+header, nav, section, aside, p, footer, #container {
 	background-color: #EBEBEB;
 }
 header, nav, footer {
@@ -18,29 +18,56 @@ header, nav, footer {
 	margin-top: 10px;
 	padding-top: 30px;
 }
-section {
+#container {
 	width: 495px;
 	height: 250px;
-	margin-top: 10px;
-	float: left;
 	position: relative;
+	float: left;
+}
+section, #container, aside {
+	margin-top: 5px;
+	/*float: left;*/
+}
+article, #container h2, #container p {
+	position: absolute;
+}
+article {
+    background-color: black;
+    color: white;
+    width: 475px;
+    height: 200px;
+    bottom: 10px;
+    left: 10px;
+}
+#container h2 {
+	background-color: blue;
+	color: white;
+	width: 400px;
+	height: 100px;
+	bottom: 50px;
+    left: 50px;
+}
+#container p {
+	background-color: red;
+	color: white;
+	width: 200px;
+	height: 50px;
+	bottom: 75px;
+    left: 150px;
+}
+}
+#container h2 {
 }
 aside {
     width: 455px;
     height: 250px;
     margin-left: 10px;
-    margin-top: 10px;
     float: right;
     margin-bottom: 10px;
 }
-article {
-    width: 365px;
-    height: 200px;
-    position: absolute;
-    background-color: black;
-    left: 57px;
-    bottom: 215px;
-}
+/*article, h2, p {
+	float: left;
+}*/
 footer {
     clear: both;
 }
